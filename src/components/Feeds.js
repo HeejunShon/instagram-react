@@ -6,23 +6,29 @@ import "./Feeds.css";
 
 class Feeds extends Component {
     state = {
-        comments: []
+        comments: [],
+        comment: ""
+    }
+    
+    handleChange = (e) => {
+        this.setState({
+            comment: e.target.value
+        })
     }
 
-
-    addComment = (e) => {
-        if (e.key  === "Enter") {
+    uploadComment = () => {
+        if (this.state.comment !== "") {
             const newComment = {
                 id: uuid(),
                 name: "Heejun_sh",
-                content: e.target.value
+                content: this.state.comment
             };
     
             this.setState({
-                comments: [...this.state.comments, newComment]
+                comments: [...this.state.comments, newComment],
+                comment: ""
             });
 
-            e.target.value = "";
             console.log(this.state.comments);
         }
     }
@@ -65,8 +71,14 @@ class Feeds extends Component {
                             delComment={this.delComment} />
                     </div>
                     <div className="input-comments">
-                        <input className="input" onKeyUp={this.addComment} type="text" placeholder="댓글 달기..."/>
-                        <button className="input-button" onClick={this.addComment} disabled>게시</button>
+                        <input className="input"
+                            onKeyUp={e => e.key === "Enter" ? this.uploadComment():""}
+                            onChange={this.handleChange}
+                            value={this.state.comment}
+                            type="text"
+                            placeholder="댓글 달기..."
+                        />
+                        <button className="input-button" onClick={this.uploadComment} >게시</button>
                     </div>
                 </article>
             </div>
