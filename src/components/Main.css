@@ -1,0 +1,23 @@
+
+body {
+    background-color: #fafafa;
+    margin-top: 53px;
+}
+
+
+.user-icon {
+    border-radius: 50%;
+}
+
+
+/*  main  */
+
+main {
+    position: relative;
+    width: 935px;
+    padding-top: 30px;
+    margin: 0 auto;
+    /* border: 1px solid burlywood; */
+}
+
+

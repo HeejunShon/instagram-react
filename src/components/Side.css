@@ -1,0 +1,137 @@
+/* Side */
+
+main .Side {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    bottom: 0;
+    width: 293px;
+    /* border: 1px solid teal; */
+}
+
+ /* Side - user-info */
+main .Side .user-info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 7px 0 12px;
+    padding: 0 0 0 5px;
+}
+
+main .Side .user-info .user-icon {
+    width: 50px;
+    height: 50px;
+}
+
+main .Side .user-info .name-wrapper {
+    margin-left: 16px;
+    line-height: 1.25;
+}
+
+main .Side .user-info .name-wrapper .name {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+main .Side .user-info .name-wrapper .full-name {
+    font-size: 12px;
+    color: #8E8E8E;
+}
+
+ /* Side - story */
+
+.container {
+    border: 1px solid #dedede;
+    background-color: white;
+    padding: 0 16px; 
+    height: 223px;
+}
+
+.story-wrapper {
+    height: 169px;
+    margin-top: 15px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.story-wrapper .user-info:first-child {
+    margin-top: 0px!important;
+}
+
+ /* Side - container - header*/
+
+.container header{
+    margin: 16px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container header span:first-child {
+    font-size: 14px;
+    color: #8E8E8E;
+    font-weight: 600;
+}
+
+.container header span:last-child {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+ /* Side - container - userinfo */
+.Side .container .user-info {
+    margin: 16px 0;
+}
+
+.Side .container .user-info .user-icon {
+    width: 34px;
+    height: 34px;
+}
+
+.Side .container .user-info .name-wrapper {
+    margin-left: 12px;
+}
+
+.Side .container .user-info .name-wrapper .time {
+    font-size: 10px;
+    color: #828282;
+}
+
+ /* Side - recommendation */
+
+ .Side .recommendation {
+     overflow: hidden;
+     margin: 12px 0;
+ }
+
+
+/* footer */
+footer span{
+    font-size: 11px;
+    color: #c7c7c7;
+}
+
+footer nav {
+    margin-bottom: 16px;
+}
+
+footer nav ul {
+    padding-left: 0px;
+}
+
+footer nav li {
+    display: inline-block;
+    font-size: 11px;
+    line-height: 13px;
+    color: #c7c7c7;
+}
+
+
+footer nav li::after {
+    content: "\00B7";
+    margin: 0 0.25em;
+}
+
+footer nav li:last-child::after {
+    content: none;
+}

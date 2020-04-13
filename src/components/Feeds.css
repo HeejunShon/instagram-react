@@ -1,0 +1,130 @@
+.Feeds {
+    position: relative;
+    width: 614px;
+    border: 1px solid #e6e6e6;
+    background-color: white;
+}
+
+/* user-info */
+
+.user-info {
+    position: relative;
+    display: flex;
+    padding: 16px;
+    /* padding-bottom: 3px; */
+    align-items: center;
+}
+
+.user-info .user-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.name-wrapper {
+    margin-left: 16px;
+    line-height: 1.23;
+}
+
+.name-wrapper .name {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.name-wrapper .place {
+    font-size: 12px;
+    color: #262626;
+}
+
+/* post-img */
+
+.Feeds article .post-img {
+    width: 100%;
+}
+
+/* functions */
+.Feeds article .functions {
+    display: flex;
+    padding: 0 5px;
+    margin-bottom: 2px;
+}
+
+.Feeds article .functions button {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+}
+
+.Feeds article .functions b
+.name-wrapper {
+    margin-left: 16px;
+    line-height: 1.23;
+}
+
+
+.Feeds article .functions button img{
+    width: 100%;
+    height: 100%;
+}
+
+/* comments */
+
+.Feeds article .comments {
+    padding: 0 16px;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+.Feeds article .comments .who-like {
+    display: flex;
+    margin: 2px 0;
+}
+
+.Feeds article .comments .who-like .user-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.Feeds article .comments .who-like .text {
+    margin-left: 7px;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+ /* comments - comment */
+
+.Feeds article .comments .comment {
+    display: block;
+}
+
+.Feeds article .comments span {
+    font-weight: 600;
+}
+
+.Feeds article .comments p {
+    margin: 0;
+}
+
+.Feeds article .comments button::after {
+    clear: both;
+}
+
+/* input-comment */
+
+.input-comments {
+    padding: 0 16px;
+    margin-top: 5px;
+    height: 55px;
+    border-top: 1px solid #dedede;
+}
+
+.input-comments input {
+    width: 92%;
+    height: 100%;
+    border: none;
+}
+
+.input-comments button {
+    background-color: white;
+    color: #0095F6;
+}
